@@ -11,7 +11,6 @@ class handler(BaseHTTPRequestHandler):
         self.send_header('Content-type', 'text/plain')  # defines the content type
         self.end_headers()  # add a blank line
         self.wfile.write(message.encode())
-        print("the headers are:", self.headers)
 
 
 if __name__ == '__main__':
