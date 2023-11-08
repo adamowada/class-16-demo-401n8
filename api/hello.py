@@ -6,7 +6,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 class handler(BaseHTTPRequestHandler):
     # use this exact method name!
     def do_GET(self):  # this is the /api/hello GET endpoint
-        message = "Hello World"
+        message = "Hello World!"
         self.send_response(200)  # HTTP code
         self.send_header('Content-type', 'text/plain')  # defines the content type
         self.end_headers()  # add a blank line
